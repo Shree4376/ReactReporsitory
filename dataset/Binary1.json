@@ -1,0 +1,27 @@
+{
+	"name": "Binary1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"folderfname": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": {
+					"value": "@concat('mymeta/',dataset().folderfname)",
+					"type": "Expression"
+				},
+				"container": "adfdata"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

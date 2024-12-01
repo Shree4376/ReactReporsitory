@@ -1,0 +1,15 @@
+{
+	"name": "dftestinginstance",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned,UserAssigned",
+		"principalId": "34a856fb-afde-4f60-9e4c-5e98fa507c82",
+		"tenantId": "56b60abd-25fd-4460-b905-fd97bc61693e",
+		"userAssignedIdentities": {
+			"/subscriptions/0b670382-3950-47e9-ae2d-9367b1419dae/resourcegroups/Azuredatafactory/providers/Microsoft.ManagedIdentity/userAssignedIdentities/testuserusermangedidentity": {
+				"clientId": "e5c8da7c-cb1d-44a5-a076-6b19df300497",
+				"principalId": "78adcd22-a85f-4fd8-a6c4-ccc9f91287c6"
+			}
+		}
+	}
+}
